@@ -40,6 +40,10 @@ pub fn to_upper_camel(s: &str) -> String {
     ident
 }
 
+pub fn safe_name(s: &str) -> String {
+    format!("r#{}", s)
+}
+
 #[cfg(test)]
 mod tests {
 
